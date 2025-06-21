@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Chunk Divider</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="container">
+        <h1>Array Chunk Divider</h1>
+        <div class="input-section">
+            <label for="arrayInput">Enter array elements (comma separated):</label>
+            <input type="text" id="arrayInput" placeholder="e.g., 1,2,3,4,1,0,2,2">
+            <label for="maxSumInput">Maximum sum (N):</label>
+            <input type="number" id="maxSumInput" min="1" placeholder="e.g., 5">
+            <button id="calculateBtn">Divide Array</button>
+        </div>
+        <div class="result-section">
+            <h2>Result:</h2>
+            <div id="result"></div>
+        </div>
+        <div class="examples">
+            <h3>Examples:</h3>
+            <ul>
+                <li>divide([1,2,3,4,1,0,2,2], 5) → [[1,2],[3],[4,1,0],[2,2]]</li>
+                <li>divide([4,3,2,1], 4) → [[4],[3],[2,1]]</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
